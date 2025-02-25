@@ -33,12 +33,12 @@ export default function Page() {
             <section className="flex flex-col items-start gap-3 sm:gap-4">
                 <ContextAlert />
                 <h1 className="mb-0">Welcome to Caselaw HK</h1>
-                <p className="text-lg">The future of legal research.</p>
+                <p className="text-lg">The future of legal research with advance RAG.</p>
                 <Link
-                    href="https://docs.netlify.com/frameworks/next-js/overview/"
+                    href="https://instagram.com/haig.ay"
                     className="btn btn-lg btn-primary sm:btn-wide"
                 >
-                    Read the Docs
+                    Learn More
                 </Link>
             </section>
             {!!ctx && (
