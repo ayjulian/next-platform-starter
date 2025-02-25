@@ -1,6 +1,6 @@
 import React from 'react';
-import Markdown from 'your-markdown-component'; // Replace with your actual Markdown component
-import CardsGrid from 'your-cards-grid-component'; // Replace with your actual CardsGrid component
+import Markdown from '@/components/Markdown'; // Replace with the correct path
+import CardsGrid from '@/components/CardsGrid'; // Replace with the correct path
 
 export default function Page() {
     const postDynamicContentExplainer = "Your dynamic content here...";
