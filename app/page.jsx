@@ -19,10 +19,9 @@ The card content below is fetched by the client-side from \`/quotes/random\` (se
 `;
 
 const postDynamicContentExplainer = `
-On Netlify, Next.js Route Handlers are automatically deployed as [Serverless Functions](https://docs.netlify.com/functions/overview/).
-Alternatively, you can add Serverless Functions to any site regardless of framework, with acccess to the [full context data](https://docs.netlify.com/functions/api/).
-
-And as always with dynamic content, beware of layout shifts & flicker! (here, we aren't...)
+At HKCaseLaw, we're revolutionizing the way legal professionals access and analyze case law. 
+Harnessing the power of artificial intelligence, natural language search, and cutting-edge RAG / GraphRAG technology, our app delivers precise and insightful legal analysis like never before. 
+Our sophisticated reasoning LLM ensures that you receive comprehensive, contextually relevant case law searches and analyses, empowering you to make well-informed decisions quickly and efficiently. Join us in transforming legal research—experience the future today.
 `;
 
 const ctx = getNetlifyContext();
@@ -40,16 +39,8 @@ export default function Page() {
                 >
                     Learn More
                 </Link>
-            </section>
-            {!!ctx && (
-                <section className="flex flex-col gap-4">
-                    <Markdown content={contextExplainer} />
-                    <RuntimeContextCard />
-                </section>
-            )}
+            
             <section className="flex flex-col gap-4">
-                <Markdown content={preDynamicContentExplainer} />
-                <RandomQuote />
                 <Markdown content={postDynamicContentExplainer} />
             </section>
             {/* !!cards?.length && <CardsGrid cards={cards} /> */}
